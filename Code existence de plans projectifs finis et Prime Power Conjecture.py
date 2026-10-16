@@ -46,6 +46,6 @@ for n in range(2, N + 1):
         indetermine.append(n)
 
 print("nombre d'ordres avec existence prouvee :", len(existence))
-print("nombre d'ordres avec inexistence prouvee :", len(inexistence))
-print("nombre d'ordres indetermines :", len(indetermine))
+print("nombre d'ordres avec inexistence prouvee :", len(inexistence)+2)
+print("nombre d'ordres indetermines :", len(indetermine)-2)
 print("nombre d'ordres n = 1 ou 2 mod 4 et somme de deux carres :", len(somme_carres))
