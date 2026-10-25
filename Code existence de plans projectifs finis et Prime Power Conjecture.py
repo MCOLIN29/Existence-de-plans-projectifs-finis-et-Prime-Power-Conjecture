@@ -51,6 +51,6 @@ for n in range(2, N + 1):
         indetermine.append(n)
 
 print("nombre d'ordres avec existence prouvee :", len(existence))
-print("nombre d'ordres avec inexistence prouvee :", len(inexistence)+2)
-print("nombre d'ordres indetermines :", len(indetermine)-2)
+print("nombre d'ordres avec inexistence prouvee :", len(inexistence)+2) #+2 pour l'inexstence des plans projectifs d'ordre 6 et 10
+print("nombre d'ordres indetermines :", len(indetermine)-2) #-2 pour l'inexstence des plans projectifs d'ordre 6 et 10
 print("En particulier, nombre d'ordres où n = 1 mod 4 ou n = 2 mod 4 et n est la somme de deux carres :", len(somme_carres))
