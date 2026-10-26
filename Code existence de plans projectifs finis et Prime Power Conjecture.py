@@ -43,7 +43,7 @@ for n in range(2, N + 1):
     if puissance_premier: 
         existence.append(n)
         
-    #inexistence d'un plan projectif fini si n = 1 mod 4 ou n = 2 mod 4 et n n'est pas la somme de deux carres (Bruck -Ryser) 
+    # inexistence d'un plan projectif fini si n = 1 mod 4 ou n = 2 mod 4 et n n'est pas la somme de deux carres (Bruck -Ryser) 
     elif (n % 4 == 1 or n % 4 == 2) and not somme2carres:
         inexistence.append(n)
     # dernier cas où on ne peut pas conclure
@@ -51,6 +51,6 @@ for n in range(2, N + 1):
         indetermine.append(n)
 
 print("Nombre d'ordres avec existence prouvee :", len(existence))
-print("Nombre d'ordres avec inexistence prouvee :", len(inexistence)+1) #+1 pour l'inexstence d'un plans projectif d'ordre 10
-print("Nombre d'ordres indetermines :", len(indetermine)-1) #-1 pour l'inexstence d'un plan projectif d'ordre 10
+print("Nombre d'ordres avec inexistence prouvee :", len(inexistence)+1) # +1 pour l'inexistence d'un plans projectif fini d'ordre 10
+print("Nombre d'ordres indetermines :", len(indetermine)-1) # -1 pour l'inexistence d'un plan projectif fini d'ordre 10
 print("En particulier, nombre d'ordres où n = 1 mod 4 ou n = 2 mod 4 et n est la somme de deux carres :", len(somme_carres))
