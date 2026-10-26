@@ -13,7 +13,7 @@ inexistence = []
 indetermine = []
 somme_carres = []
 
-# on factorise n grace au crible
+# on factorise n grâce au crible
 for n in range(2, N + 1):
     m = n
     facteurs = {}
@@ -29,7 +29,7 @@ for n in range(2, N + 1):
     puissance_premier = len(facteurs) == 1 # n est une puissance de nombre premier si un seul facteur premier
 
     # n est somme de deux carrés si tous les facteurs premiers
-    # congrus a 3 mod 4 ont un exposant pair (version généralisée du théorème des deux carrés de Fermat)
+    # congrus à 3 mod 4 ont un exposant pair (version généralisée du théorème des deux carrés de Fermat)
     somme2carres = True
     for p in facteurs:
         if p % 4 == 3 and facteurs[p] % 2 != 0:
@@ -52,5 +52,5 @@ for n in range(2, N + 1):
 
 print("Nombre d'ordres avec existence prouvée :", len(existence))
 print("Nombre d'ordres avec inexistence prouvée :", len(inexistence)+1) # +1 pour l'inexistence d'un plan projectif fini d'ordre 10
-print("Nombre d'ordres indeterminés :", len(indetermine)-1) # -1 pour l'inexistence d'un plan projectif fini d'ordre 10
+print("Nombre d'ordres indéterminés :", len(indetermine)-1) # -1 pour l'inexistence d'un plan projectif fini d'ordre 10
 print("En particulier, nombre d'ordres où n = 1 mod 4 ou n = 2 mod 4 et n est la somme de deux carrés :", len(somme_carres))
