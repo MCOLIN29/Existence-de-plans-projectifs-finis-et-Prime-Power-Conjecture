@@ -29,7 +29,7 @@ for n in range(2, N + 1):
     puissance_premier = len(facteurs) == 1 # n est une puissance de nombre premier si un seul facteur premier
 
     # n est somme de deux carres si tous les facteurs premiers
-    # congrus a 3 mod 4 ont un exposant pair (Version généralisé du théorème des deux carrés de Fermat)
+    # congrus a 3 mod 4 ont un exposant pair (Version généralisee du théorème des deux carres de Fermat)
     somme2carres = True
     for p in facteurs:
         if p % 4 == 3 and facteurs[p] % 2 != 0:
@@ -50,7 +50,7 @@ for n in range(2, N + 1):
     else:
         indetermine.append(n)
 
-print("Nombre d'ordres avec existence prouvee :", len(existence))
-print("Nombre d'ordres avec inexistence prouvee :", len(inexistence)+1) # +1 pour l'inexistence d'un plans projectif fini d'ordre 10
-print("Nombre d'ordres indetermines :", len(indetermine)-1) # -1 pour l'inexistence d'un plan projectif fini d'ordre 10
-print("En particulier, nombre d'ordres où n = 1 mod 4 ou n = 2 mod 4 et n est la somme de deux carres :", len(somme_carres))
+print("Nombre d'ordres avec existence prouvée :", len(existence))
+print("Nombre d'ordres avec inexistence prouvée :", len(inexistence)+1) # +1 pour l'inexistence d'un plan projectif fini d'ordre 10
+print("Nombre d'ordres indeterminés :", len(indetermine)-1) # -1 pour l'inexistence d'un plan projectif fini d'ordre 10
+print("En particulier, nombre d'ordres où n = 1 mod 4 ou n = 2 mod 4 et n est la somme de deux carrés :", len(somme_carres))
