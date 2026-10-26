@@ -50,7 +50,7 @@ for n in range(2, N + 1):
     else:
         indetermine.append(n)
 
-print("nombre d'ordres avec existence prouvee :", len(existence))
-print("nombre d'ordres avec inexistence prouvee :", len(inexistence)+1) #+1 pour l'inexstence d'un plans projectif d'ordre 10
-print("nombre d'ordres indetermines :", len(indetermine)-1) #-1 pour l'inexstence d'un plan projectif d'ordre 10
+print("Nombre d'ordres avec existence prouvee :", len(existence))
+print("Nombre d'ordres avec inexistence prouvee :", len(inexistence)+1) #+1 pour l'inexstence d'un plans projectif d'ordre 10
+print("Nombre d'ordres indetermines :", len(indetermine)-1) #-1 pour l'inexstence d'un plan projectif d'ordre 10
 print("En particulier, nombre d'ordres où n = 1 mod 4 ou n = 2 mod 4 et n est la somme de deux carres :", len(somme_carres))
