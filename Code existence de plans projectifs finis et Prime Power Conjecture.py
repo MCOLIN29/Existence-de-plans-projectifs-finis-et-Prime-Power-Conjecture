@@ -28,7 +28,7 @@ for n in range(2, N + 1):
 
     puissance_premier = len(facteurs) == 1 # n est une puissance de nombre premier si un seul facteur premier
 
-    # n est somme de deux carrés si tous les facteurs premiers
+    # n est la somme de deux carrés si tous les facteurs premiers
     # congrus à 3 mod 4 ont un exposant pair (version généralisée du théorème des deux carrés de Fermat)
     somme2carres = True
     for p in facteurs:
@@ -43,7 +43,7 @@ for n in range(2, N + 1):
     if puissance_premier: 
         existence.append(n)
         
-    # inexistence d'un plan projectif fini si n = 1 mod 4 ou n = 2 mod 4 et n n'est pas la somme de deux carrés (Bruck -Ryser) 
+    # inexistence d'un plan projectif fini si n = 1 mod 4 ou n = 2 mod 4 et n n'est pas la somme de deux carrés (Bruck - Ryser) 
     elif (n % 4 == 1 or n % 4 == 2) and not somme2carres:
         inexistence.append(n)
     # dernier cas où on ne peut pas conclure
